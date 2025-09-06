@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstCall Technology - Trusted Technology Solutions in Langata</title>
+    <meta name="description" content="FirstCall Technology provides high-quality tech products, biometric systems, CCTV cameras, and professional IT solutions in Langata, Kenya.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.svg" alt="FirstCall Technology company logo" class="logo-img">
+                <h2>FirstCall Technology</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-cart">
+                <button id="cart-btn" class="cart-btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Trusted Technology Solutions</h1>
+                <p class="hero-subtitle">Empowering businesses in Langata and beyond with high-quality tech products, security systems, and professional IT solutions for enhanced efficiency and security.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-illustration">
+                    <i class="fas fa-code"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-database"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop Our Products</h2>
+                <p>High-quality technology products and security systems available for purchase</p>
+            </div>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all" type="button">All Products</button>
+                <button class="category-btn" data-category="laptops" type="button">Laptops & Computers</button>
+                <button class="category-btn" data-category="security" type="button">Security Systems</button>
+                <button class="category-btn" data-category="accessories" type="button">Accessories</button>
+            </div>
+            <div class="products-grid">
+                <!-- ...existing product cards... -->
+                <!-- No changes needed in product cards -->
+                <div class="product-card" data-category="laptops">
+                    <div class="product-image">
+                        <div class="product-img-placeholder hp-laptop">
+                            <span>HP Laptop</span>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>HP Pavilion Laptop</h3>
+                        <p class="product-description">15.6" Full HD, Intel Core i5, 8GB RAM, 512GB SSD</p>
+                        <div class="product-price">
+                            <span class="current-price">KSh 85,000</span>
+                            <span class="original-price">KSh 95,000</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="hp-laptop" type="button">Add to Cart</button>
+                            <button class="btn btn-secondary view-details" type="button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ...other product cards unchanged... -->
+                <div class="product-card" data-category="laptops">
+                    <div class="product-image">
+                        <div class="product-img-placeholder dell-laptop">
+                            <span>Dell Laptop</span>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Dell Inspiron Laptop</h3>
+                        <p class="product-description">14" HD, Intel Core i3, 4GB RAM, 256GB SSD</p>
+                        <div class="product-price">
+                            <span class="current-price">KSh 65,000</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="dell-laptop" type="button">Add to Cart</button>
+                            <button class="btn btn-secondary view-details" type="button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="security">
+                    <div class="product-image">
+                        <div class="product-img-placeholder cctv-camera">
+                            <span>CCTV Camera</span>
+                        </div>
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>HD CCTV Camera</h3>
+                        <p class="product-description">1080p HD, Night Vision, Motion Detection, Weatherproof</p>
+                        <div class="product-price">
+                            <span class="current-price">KSh 12,500</span>
+                            <span class="original-price">KSh 15,000</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="cctv-camera" type="button">Add to Cart</button>
+                            <button class="btn btn-secondary view-details" type="button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="security">
+    <div class="product-image">
+        <img src="c:\Users\paulm\firstcall_technologies\images\hqdefault.webp" 
+             alt="Biometric Attendance System" 
+             class="product-img" />
+    </div>
+    <div class="product-content">
+        <h3>Biometric Attendance System</h3>
+        <p class="product-description">Fingerprint Scanner, 1000 User Capacity, LCD Display</p>
+        <div class="product-price">
+            <span class="current-price">KSh 25,000</span>
+        </div>
+        <div class="product-actions">
+            <button class="btn btn-primary add-to-cart" data-product="biometric-device" type="button">Add to Cart</button>
+            <button class="btn btn-secondary view-details" type="button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.product-image {
+    width: 100%;
+    height: 200px; /* same height for all cards */
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9; /* light background for uniformity */
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 100%;
+   
+    padding: 5px;
+    display: block;
+}
+
+</style>
+
+               <div class="product-card" data-category="accessories">
+    <div class="product-image">
+        <img src="c:\Users\paulm\firstcall_technologies\images\BDT0S25021906MCWH66.webp" 
+             alt="Wireless Mouse" 
+             class="product-img" />
+    </div>
+    <div class="product-content">
+        <h3>Wireless Optical Mouse</h3>
+        <p class="product-description">2.4GHz Wireless, 1200 DPI, Long Battery Life</p>
+        <div class="product-price">
+            <span class="current-price">KSh 2,500</span>
+        </div>
+        <div class="product-actions">
+            <button class="btn btn-primary add-to-cart" data-product="wireless-mouse" type="button">Add to Cart</button>
+            <button class="btn btn-secondary view-details" type="button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.product-image {
+    width: 44%;
+    height: 18px; /* smaller box */
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; /* optional, looks clean */
+}
+
+.product-img {
+    max-width: 30%;
+    max-height: 100%;
+    object-fit: contain; /* keeps full mouse visible */
+    padding: 5px; /* adds spacing */
+    display: block;
+}
+</style>
+
+              <div class="product-card" data-category="accessories">
+    <div class="product-image">
+        <img src="c:\Users\paulm\firstcall_technologies\images\91e-WNUpH0L._AC_UY218_.jpg" 
+             alt="External HDD" 
+             class="product-img" />
+        
+    </div>
+    <div class="product-content">
+        <h3>1TB External Hard Drive</h3>
+        <p class="product-description">USB 3.0, Portable, Compatible with PC & Mac</p>
+        <div class="product-price">
+            <span class="current-price">KSh 8,500</span>
+            <span class="original-price">KSh 12,000</span>
+        </div>
+        <div class="product-actions">
+            <button class="btn btn-primary add-to-cart" data-product="external-hdd" type="button">Add to Cart</button>
+            <button class="btn btn-secondary view-details" type="button">View Details</button>
+        </div>
+    </div>
+</div>
+
+
+                <div class="product-card" data-category="security">
+    <div class="product-image">
+        <img src="c:\Users\paulm\firstcall_technologies\images\security-monitoring-station.webp" 
+             alt="Security Monitor" 
+             class="product-img" />
+    </div>
+    <div class="product-content">
+        <h3>Security Monitor</h3>
+        <p class="product-description">19" HD Monitor, Multiple Input Support, Wall Mountable</p>
+        <div class="product-price">
+            <span class="current-price">KSh 35,000</span>
+        </div>
+        <div class="product-actions">
+            <button class="btn btn-primary add-to-cart" data-product="security-monitor" type="button">Add to Cart</button>
+            <button class="btn btn-secondary view-details" type="button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.product-image {
+    width: 100%;
+    height: 200px; /* adjust as needed */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps proportions while filling box */
+    display: block;
+}
+</style>
+
+                <div class="product-card" data-category="laptops">
+    <div class="product-card" data-category="laptops">
+    <div class="product-image">
+        <img src="c:/Users/paulm/firstcall_technologies/images/hero-bg.webp" 
+             alt="Desktop Computer" 
+             class="product-img" />
+    </div>
+    <div class="product-content">
+        <h3>Desktop Computer</h3>
+        <p class="product-description">Intel Core i5, 8GB RAM, 1TB HDD, Windows 10 Pro</p>
+        <div class="product-price">
+            <span class="current-price">KSh 75,000</span>
+        </div>
+    </div>
+</div>
+
+<style>
+.product-image {
+    width: 100%;
+    height: 200px; /* fixed height for consistency */
+    overflow: hidden;
+    border-radius: 10px; /* rounded corners */
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills container without distortion */
+    display: block;
+}
+</style>
+
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart" data-product="desktop-computer" type="button">Add to Cart</button>
+                            <button class="btn btn-secondary view-details" type="button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content product-modal-content">
+            <div class="modal-header">
+                <h3 id="product-modal-title">Product Details</h3>
+                <span class="close" id="close-product-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="product-details-container">
+                    <div class="product-details-image">
+                        <div class="product-img-placeholder" id="product-detail-image">
+                            <span id="product-detail-name">Product Name</span>
+                        </div>
+                    </div>
+                    <div class="product-details-info">
+                        <h2 id="product-detail-title">Product Title</h2>
+                        <div class="product-detail-price">
+                            <span class="current-price" id="product-detail-current-price">KSh 0</span>
+                            <span class="original-price" id="product-detail-original-price"></span>
+                        </div>
+                        <div class="product-detail-description" id="product-detail-description">
+                            <!-- Product description will be loaded here -->
+                        </div>
+                        <div class="product-detail-specs" id="product-detail-specs">
+                            <!-- Product specifications will be loaded here -->
+                        </div>
+                        <div class="product-detail-features" id="product-detail-features">
+                            <!-- Product features will be loaded here -->
+                        </div>
+                        <div class="product-detail-actions">
+                            <button class="btn btn-primary add-to-cart-detail" id="add-to-cart-detail" type="button">Add to Cart</button>
+                            <button class="btn btn-secondary" id="contact-about-product" type="button">Contact About This Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <span class="close" id="close-cart-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items">
+                    <!-- Cart items will be displayed here -->
+                </div>
+                <div class="cart-total">
+                    <h4>Total: <span id="cart-total">KSh 0</span></h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="clear-cart" type="button">Clear Cart</button>
+                <button class="btn btn-primary" id="checkout" type="button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive technology solutions and high-quality products for your business needs</p>
+            </div>
+            <div class="services-grid">
+                <!-- ...existing service cards... -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptops & Computers</h3>
+                    <p>High-quality laptops and desktop computers from leading brands, tailored to your business requirements and budget.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Biometric Systems</h3>
+                    <p>Advanced biometric attendance systems for accurate employee tracking and enhanced security management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>CCTV Cameras</h3>
+                    <p>Professional CCTV camera installations for comprehensive surveillance and security monitoring solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Installation Services</h3>
+                    <p>Expert installation and setup services for all technology products with professional support and maintenance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Solutions</h3>
+                    <p>Comprehensive security systems including access control, alarm systems, and integrated security management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>IT Support</h3>
+                    <p>Professional IT support and maintenance services to ensure your technology systems run smoothly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About FirstCall Technology</h2>
+                    <p>FirstCall Technology is a trusted technology solutions provider based in Langata, Nairobi. We specialize in delivering high-quality tech products, including laptops, biometric attendance systems, CCTV cameras, and accessories. Our dedicated team offers expert installation and customized IT solutions tailored to meet the needs of businesses and individuals.</p>
+                    <p>With a commitment to reliability and customer satisfaction, FirstCall Technology ensures that you get the best technology solutions to secure and grow your operations. Through continuous innovation and dedicated support, we aim to be the leading tech partner for Nairobi's businesses and communities.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>400+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-illustration">
+                        <i class="fas fa-users"></i>
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by businesses across Langata and Nairobi for reliable technology solutions</p>
+            </div>
+            <div class="testimonials-grid">
+                <!-- ...existing testimonial cards... -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"FirstCall Technology installed our complete office security system including CCTV cameras and biometric attendance. The installation was professional, and their after-sales support is excellent. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Mwangi</h4>
+                            <span>Office Manager, Langata Business Center</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- ...other testimonial cards unchanged... -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We've been working with FirstCall Technology for over 2 years. They've supplied all our laptops and computers, and their IT support team is always responsive. Great quality products and reliable service."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>David Ochieng</h4>
+                            <span>IT Director, Nairobi Retail Chain</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The biometric attendance system they installed has completely transformed how we manage our staff. The system is reliable and easy to use. FirstCall Technology delivered exactly what they promised."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Grace Wanjiku</h4>
+                            <span>HR Manager, Langata Manufacturing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional service from start to finish. They helped us choose the right security cameras for our school and installed everything perfectly. The staff training was also very helpful."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>John Kamau</h4>
+                            <span>Principal, Langata Secondary School</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Affordable prices and top-quality products. FirstCall Technology helped us set up our entire IT infrastructure within our budget. Their maintenance support is also very reliable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Mary Akinyi</h4>
+                            <span>Owner, Langata Boutique</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent customer service and technical expertise. They responded quickly to our emergency security system issue and resolved it professionally. Highly trustworthy company."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Peter Njoroge</h4>
+                            <span>Security Manager, Industrial Complex</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Showcasing some of our successful projects and solutions</p>
+            </div>
+            <div class="portfolio-grid">
+                <!-- ...existing portfolio items... -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Office Security System</h3>
+                        <p>Complete CCTV and biometric access control system for corporate office security and attendance tracking.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Retail Store Setup</h3>
+                        <p>Comprehensive technology setup including POS systems, security cameras, and inventory management for retail businesses.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>School Security Installation</h3>
+                        <p>Advanced security system with CCTV cameras and biometric attendance for educational institutions.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Industrial Security</h3>
+                        <p>Robust security and monitoring systems for manufacturing facilities and industrial complexes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to secure and enhance your business with reliable technology solutions? Let's discuss your needs.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Langata, Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+254 742407938</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@firstcalltechnology.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="FirstCall Technology company logo" class="footer-logo-img">
+                        <h3>FirstCall Technology</h3>
+                    </div>
+                    <p>Empowering businesses with affordable, innovative, and reliable technology solutions in Langata and beyond.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Laptops & Computers</a></li>
+                        <li><a href="#services">Biometric Systems</a></li>
+                        <li><a href="#services">CCTV Cameras</a></li>
+                        <li><a href="#services">Security Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Langata, Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 742407938</p>
+                    <p><i class="fas fa-envelope"></i> info@firstcalltechnology.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2017 FirstCall Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
