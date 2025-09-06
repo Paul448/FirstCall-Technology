@@ -445,7 +445,7 @@ function checkout() {
     
     // In a real implementation, this would redirect to a payment gateway
     setTimeout(() => {
-        alert(`Thank you for your order!\nTotal: KSh ${cartTotal.toLocaleString()}\n\nPlease contact us at +254 XXX XXX XXX to complete your purchase.`);
+        alert(`Thank you for your order!\nTotal: KSh ${cartTotal.toLocaleString()}\n\nPlease contact us at +254 742407938 to complete your purchase.`);
         clearCart();
         closeCart();
     }, 2000);
